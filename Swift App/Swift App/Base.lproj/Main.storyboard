@@ -37,18 +37,42 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HJM-05-tb4"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nQg-Ub-2mo">
+                                <rect key="frame" x="150" y="170.5" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="lbq-jK-n8p"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="65l-r8-2B5">
+                                <rect key="frame" x="150" y="225.5" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Kz7-MP-XUo"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="QVM-Pa-5WI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="BQV-6f-sfB"/>
+                            <constraint firstItem="65l-r8-2B5" firstAttribute="top" secondItem="nQg-Ub-2mo" secondAttribute="bottom" constant="25" id="Hzo-ve-EWM"/>
                             <constraint firstItem="qvR-By-18l" firstAttribute="top" secondItem="QVM-Pa-5WI" secondAttribute="bottom" constant="25" id="Q5O-eG-Rjd"/>
                             <constraint firstItem="QVM-Pa-5WI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qay-tN-eZp"/>
                             <constraint firstItem="qvR-By-18l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="STe-es-ehB"/>
                             <constraint firstItem="e2P-oc-gtW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="XMD-o9-wlc"/>
+                            <constraint firstItem="nQg-Ub-2mo" firstAttribute="top" secondItem="qvR-By-18l" secondAttribute="bottom" constant="25" id="hWI-0U-IwZ"/>
+                            <constraint firstItem="65l-r8-2B5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vYN-00-Bed"/>
+                            <constraint firstItem="nQg-Ub-2mo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vi4-3L-T0G"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="firstNumField" destination="nQg-Ub-2mo" id="ZSg-wG-DqI"/>
                         <outlet property="label" destination="QVM-Pa-5WI" id="obO-ij-cwr"/>
+                        <outlet property="secondNumField" destination="65l-r8-2B5" id="i82-gZ-Ad8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -11,15 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var label: UILabel!
-    var count = 0
+    @IBOutlet var firstNumField: UITextField!
+    @IBOutlet var secondNumField: UITextField!
     
-
     @IBAction func buttonTapped(_ sender: Any) {
-        label.text = "This is dumb as shit."
-        count+=1
-        if(count>5){
-            label.text = "Stop pushing the damn button!"
-        }
+        print(Int(firstNumField.text!)!+Int(secondNumField.text!)!)
     }
     
     override func viewDidLoad() {
