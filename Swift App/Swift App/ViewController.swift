@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet var secondNumField: UITextField!
     
     @IBAction func buttonTapped(_ sender: Any) {
-        label.text = String(Double(firstNumField.text!)!+Double(secondNumField.text!)!)
+        label.text = "\(Double(firstNumField.text!)!+Double(secondNumField.text!)!)"
     }
     
     override func viewDidLoad() {
